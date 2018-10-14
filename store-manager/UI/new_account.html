@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Store Manager</title>
+	<link rel="stylesheet" type="text/css" href="logincss.css">
+	<link rel="shortcut icon" type="text/css" href="applogo.png">
+</head>
+<body>
+
+	<div class="login">
+	  <div class="login-header">
+	    <h1>New User Account</h1>
+	  </div>
+	 <div class="login-form">
+
+	  	<form action="" method="post">
+	    <h3>E-mail:</h3>
+	    <input type="text" id="email" placeholder="E-mail"/><br>
+	    <h3>Username:</h3>
+	    <input type="text" id="password" placeholder="Username"/>
+	    <br>
+	    <h3>New Password:</h3>
+	    <input type="password" id="password" placeholder="New Password"/>
+	    <br>
+	    <h3>Confirm Password:</h3>
+	    <input type="password" id="confirm-password" placeholder="Confirm Password"/>
+	    <br>
+	    <input type="button" onclick="account()" value="Create Account" class="login-button"/>
+	    <a href="index.html" class="back-to-login">LogIn</a>
+	    </form>
+
+	    <script type="text/javascript">
+	    	function account() {
+	    		window.alert('Conglatulations ! Your account has been created !');
+	    	}
+	    	
+	    </script>
+
+	</div>
+</div>
+
+</body>
+</html>

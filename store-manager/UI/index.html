@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Store Manager</title>
+	<link rel="stylesheet" type="text/css" href="logincss.css">
+	<link rel="shortcut icon" type="text/css" href="applogo.png">	
+</head>
+<body>
+
+	<div class="login">
+	  <div class="login-header">
+	    <h1>Login</h1>
+	  </div>
+
+	  <div class="login-form">
+
+	  	<form action="" name="myForm" method="post">
+	    <h3>Username:</h3>
+	    <input type="text" id="username" name="user" placeholder="Username: Type 1 for store attendant"/><br>
+	    <h3>Password:</h3>
+	    <input type="password" name="pass" id="password" placeholder="Password"/>
+	    <br>
+	    <input type="button" value="Login" onclick="myLogin()" class="login-button"/>
+	    </form>
+
+	    <br><br>
+	    <a class="sign-up" href="new_account.html">Create an account !</a>
+	    <br><br>
+	    <a class="no-access" href="reset_password.html">Forgot your password?</a>
+	  </div>
+	</div>
+	
+	<script type="text/javascript">
+		
+		function myLogin() {
+			var user = document.forms["myForm"]["user"].value;
+			if (user == 1) {
+				window.location.href = "attendant.html";
+			}
+			else{
+				window.location.href = "owner.html";
+				
+				
+		}
+			}
+
+	</script>
+
+</body>
+</html>

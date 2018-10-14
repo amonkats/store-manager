@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Store Manager</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="text/css" href="applogo.png">
+</head>
+<body>
+
+	<h1>The Store Manager Application</h1><i>- Store Attendant</i>
+	<h2>List of Available Products&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<button type="button" class="btn btn-success">Add Product</button></h2>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <span class="close">&times;</span>
+		      <h2>Please Add Product</h2>
+		    </div>
+
+		    <div class="modal-body">
+		      <form action="">
+			      <label>Product Name:</label><br>
+			      <input type="text" name="name"><br>
+			      <label>Quantity:</label><br>
+			      <input type="text" name="quantity"><br>
+			      <label>Price:</label><br>
+			      <input type="text" name="price"><br><br>
+			      <button type="submit" class="btn btn-primary">Add Product</button>
+			  </form>
+		    </div>
+
+		    <div class="modal-footer">
+		      <!--<button type="button" class="btn-default">Close</button>-->
+		    </div>
+		  </div>
+
+		  <script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementsByClassName("btn")[0];
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			    modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+	</script>
+
+		</div>
+		
+		<input type="text" name="search" placeholder="Search Product...">
+
+	<table border="1">
+		<th>Product Name</th>
+		<th>Quantity (kg)</th>
+		<th>Price (Ugx)</th>
+
+		<tr><td>Posho</td>
+			<td>30</td>
+			<td>120,000.00</td>
+		</tr>
+		<tr><td>G.nuts</td>
+			<td>25</td>
+			<td>200,000.00</td>
+		</tr>
+		<tr><td>Rice</td>
+			<td>20</td>
+			<td>140,000.00</td>
+		</tr>
+		<tr><td>Tomatoes</td>
+			<td>15</td>
+			<td>70,000.00</td>
+		</tr>
+	</table>
+
+</body>
+</html>
